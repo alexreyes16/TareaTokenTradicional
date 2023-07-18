@@ -1,0 +1,21 @@
+<div style="width: 300px; margin: 0 auto; padding-top: 20px;">
+    <h1 style="text-align: center;padding-top: 10px;padding-bottom: 20px;">Iniciar Sesion</h1>
+    <div class="form-floating mb-3">
+        <input #user type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Correo electronico</label>
+    </div>
+    <div class="form-floating">
+        <input #pass type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+        <label for="floatingPassword">Contraseña</label>
+    </div>
+    <div style="text-align: center;padding-top: 20px;">
+        <button (click)="onSubmit(user.value,pass.value)" style="width: 200px;" type="button" class="btn btn-primary">Login</button>
+        <p style="padding-top: 5px;">¿No tienes una cuenta? <a style="color: blue;cursor: pointer;" (click)="userRegister()">Registrate</a> </p>
+    </div>
+    <div style="height: 1px; background-color: #000;margin: 20px 0;"></div>
+    <div style="text-align: center;">
+        <button style=" width: 250px; " (click)="loginGoogle()" type="button" class="btn btn-outline-primary">
+            <img style="width: 25px;" src="https://www.pngmart.com/files/16/official-Google-Logo-PNG-Image.png" alt="">
+            Ingregar son Google</button>
+    </div>
+</div>
